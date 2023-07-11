@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e7e7e7;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.main {
+    width: 90%;
+    justify-content: center;
+    border: solid 5px;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+
+.producto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px orange;
+}
+
+.img-prod {
+    width: 100%
+}
+
+.descripcion {
+    border-top: solid 1px #ebebeb
+}
+
+.navbar {
+    width: 100vw;
+    box-sizing: border-box;
+    display: none;
+}
+
+.desc {
+    display: none;
+}
+
+@media(min-width:361px) {
+    .navbar {
+        display: inline;
+    }
+
+    .productos {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .producto {
+        display: inline-block;
+        width: 40vw;
+    }
+
+    .desc {
+        display: inline;
+    }
+}
+
+@media(min-width:761px) {
+    .navbar {
+        display: inline;
+    }
+
+    /*link margin 0 para que se pegue arriba*/
+    .links {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100%;/*para que ul el alto sea 100%*/
+        align-items: center;/**para centrar en el hight*/
+        
+    }
+    .links li {
+        display: inline-block;
+    }
+
+    .productos {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .producto {
+        display: inline-block;
+        width: 21vw;
+    }
+
+    .desc {
+        display: inline;
+    }
+
+    
+}
