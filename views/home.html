@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
 
@@ -12,10 +15,23 @@
 
 <body>
     <header>
-
-        <img class="img-prod" src="/img/logo-mercado-liebre.svg"></img>
-        <p>lugar para poner barra de búsqueda</p>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="menu">
+        <div class="logo-busq">
+            <div class="head-section">
+            <img class="img-logo" src="/img/logo-mercado-liebre.svg"></img>
+            </div>
+            <div class="head-section input-align">
+            <div class="input-wrapper">
+                <input type="text" class="search" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="head-section  width-txt">
+        
+            <p class="compra-txt">Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        </div>
+    </div>        
         <nav class="navbar">
             <ul class="links">
                 <li> <a href="#">Ofertas</a></li>
@@ -31,13 +47,13 @@
             </ul>
 
         </nav>
-
-        <img class="img-prod" src="/img/img-home-banner.jpg"></img>
+        </div>
+        <img class="img-banner" src="/img/img-home-banner.jpg"></img>
     </header>
-    <main class="main">
+    <main class="container">
         <h2>Basado en tu última visita</h2>
         <section class="productos">
-           
+
             <article class="producto">
                 <img class="img-prod" src="/img/img-cafetera-moulinex.jpg"></img>
                 <div class="descripcion">
@@ -75,16 +91,23 @@
 
     </main>
 
-    <footer>
-        <section>
-            <h2>Pagá con tarjeta o en efectivo</h2>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section>
-            <h2>Envío gratis desde $ 2.500</h2>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
+    <footer class="container">
+        <section class="footsection">
+            <div class="card">
+                <h2>Pagá con tarjeta o en efectivo</h2>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div class="card">
+                <h2>Envío gratis desde $ 2.500</h2>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="card">
+                <h2>Pagá con tarjeta o en efectivo</h2>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
         </section>
 
     </footer>

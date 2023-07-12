@@ -5,17 +5,21 @@ body {
     font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
+    font-size: 13px;
 
 }
 
-.main {
+
+.container {
     width: 90%;
     justify-content: center;
     border: solid 5px;
     margin: 0 auto;
     box-sizing: border-box
 }
-
+.menu{
+    background-color:#fff159;
+}
 .producto {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -23,11 +27,51 @@ body {
 }
 
 .img-prod {
-    width: 100%
+    width: 100%;
 }
-
+/*
+.img-logo {
+    width: 50%;
+    height: 100%;
+}*/
+.img-banner {
+    width: 100%;  
+}
 .descripcion {
     border-top: solid 1px #ebebeb
+}
+.logo-busq{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*
+    justify-content: space-between;
+    height: 8vh;
+    padding-top:10px;
+    padding-bottom:10px;
+    align-items: center;*/
+}
+.head-section{
+        width: 40vw;        
+}
+.width-txt{
+    width: 66vw;
+}
+.input-align{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.input-wrapper {    
+    display:flex;
+    flex-direction: row;    
+   
+}
+.search{
+    width:100%;
+   
 }
 
 .navbar {
@@ -39,6 +83,21 @@ body {
 .desc {
     display: none;
 }
+.footsection{
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #bbb;
+}
+.card {
+    width:  240px;
+    height:  280px;
+    margin: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
+  }
 
 @media(min-width:361px) {
     .navbar {
@@ -55,6 +114,11 @@ body {
     .producto {
         display: inline-block;
         width: 40vw;
+    }
+    .head-section{       
+        width: 30vw;
+        
+          
     }
 
     .desc {
@@ -91,6 +155,11 @@ body {
     .producto {
         display: inline-block;
         width: 21vw;
+    }
+    .head-section{      
+            width: 30vw;
+        
+          
     }
 
     .desc {

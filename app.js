@@ -12,7 +12,6 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     // Respondemos a este request con este string, mediante res.send
     const ruta = path.join(__dirname, './views/home.html');
-    console.log('Hicieron un request en "/"');
     res.sendFile(ruta);
 });
 
