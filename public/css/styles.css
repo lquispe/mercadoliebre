@@ -1,29 +1,32 @@
-body {
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+body {
+   
     background-color: #e7e7e7;
-    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;    
 
 }
 
 
 .container {
     width: 90%;
-    justify-content: center;
-    border: solid 5px;
+    justify-content: center;    
     margin: 0 auto;
     box-sizing: border-box
 }
 .menu{
     background-color:#fff159;
+    text-align: center;
+    padding:16px;
 }
+
 .producto {
     margin-top: 10px;
     margin-bottom: 10px;
-    border: solid 1px orange;
+    background-color: white;
 }
 
 .img-prod {
@@ -38,7 +41,24 @@ body {
     width: 100%;  
 }
 .descripcion {
-    border-top: solid 1px #ebebeb
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.precio{
+    margin-bottom: 14px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+
+
+}
+.valprecio{
+    font-size: 19px;
+}
+.verde{
+    color: #39b54a ;
 }
 .logo-busq{
     
@@ -75,10 +95,9 @@ justify-content: center;
 }
 
 .navbar {
-    width: 100vw;
-    box-sizing: border-box;
-    display: none;
+    width: 100vw;   
 }
+
 
 .desc {
     display: none;
@@ -86,23 +105,150 @@ justify-content: center;
 .footsection{
     display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  background: #bbb;
+  flex-wrap: wrap; 
+}
+.card-long{
+    flex:80%;
 }
 .card {
-    width:  240px;
-    height:  280px;
     margin: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background: #fff;
     box-sizing: border-box;
+    text-align: center;
   }
 
+  .hamburger{
+    background-color: rgb(16, 21, 179);
+    color:aliceblue;
+    border-color:rgb(16, 21, 179);
+  }
+  .verEnl{
+    display: none;
+}
+/*truck*/
+.descripcion i{
+    display: block;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color:#FFF;
+    border-radius: 50% ;
+    position: absolute;
+    right: 20px;
+    top: -15px ;
+    color: #39b54a ;
+    }
+    .footer-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        width: 7%;
+        height: 5vh;
+        margin: auto;
+        color: blue;
+        margin-bottom: 5px;
+        margin-top: 10%;
+    }
+
+    /*formulario*/
+    .register-form,
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.register-form input {
+    width: 100%;
+    padding: 5px;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.input-group label {
+    display: flex;
+
+
+}
+
+
+.input-group select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.titulos {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.input-group input[value="Ingresá"]:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
+
+.input-group input[value="Registrarme"] {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.input-group:hover input[value="Registrarme"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+/*fin formulario*/
+
+
+
+
 @media(min-width:361px) {
-    .navbar {
+    .card-long{
+        flex:35%;
+    }
+    .verEnl{
         display: inline;
     }
+    .enlaces{
+        display: flex;
+
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*link margin 0 para que se pegue arriba*/
+    .links {
+        
+        display: flex;
+        flex-direction: row;
+        height: 100%;/*para que ul el alto sea 100%*/
+        width: 25vw;
+        align-items: center;/**para centrar en el hight*/
+        justify-content: space-around;
+        
+        
+    }
+    .links li {
+        display: inline-block;
+    }
+    
 
     .productos {
         display: flex;
@@ -120,30 +266,49 @@ justify-content: center;
         
           
     }
+   
 
     .desc {
         display: inline;
     }
+    .displayHamb{
+        display:none;
+      }
 }
 
 @media(min-width:761px) {
-    .navbar {
+    .card-long{
+        flex:26%;
+    }
+    .verEnl{
         display: inline;
+    }
+    .enlaces{
+        display: flex;
+
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /*link margin 0 para que se pegue arriba*/
     .links {
-        margin: 0;
-        padding: 0;
+        
         display: flex;
         flex-direction: row;
         height: 100%;/*para que ul el alto sea 100%*/
+        width: 25vw;
         align-items: center;/**para centrar en el hight*/
+        justify-content: space-around;
+        
         
     }
     .links li {
         display: inline-block;
     }
+    
 
     .productos {
         display: flex;
@@ -165,6 +330,8 @@ justify-content: center;
     .desc {
         display: inline;
     }
-
+    .displayHamb{
+        display:none;
+      }
     
 }
