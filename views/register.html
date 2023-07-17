@@ -25,7 +25,7 @@
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="head-section  width-txt">
+                <div class="head-section  width-txt input-align padding-tb">
 
                     <p class="compra-txt"> <i class="fa-solid fa-hand-holding-dollar"></i></i>Comprá en cuotas y sin
                         tarjeta de crédito</p>
@@ -51,33 +51,35 @@
                     </nav>
                 </div>
             </div>
-        </div>       
+        </div>
+        <img class="img-banner" src="/img/img-home-banner.jpg"></img>
     </header>
-    <div class="container">
-        <form class="register-form" action="/registrar" method="get">
+    <main class="containerLog padding-tbtxt">
+       
+        <form class="register-form" action="/" method="get">
             <div class="input-group">
                 <label for="nombre"></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
+                <input type="text" name="nombre" class="inputb" id="nombre" placeholder="Nombre y apellido" required>
             </div>
     
             <div class="input-group">
                 <label for="nombre"></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuari@" required>
+                <input type="text" name="nombre" class="inputb" id="nombre" placeholder="Nombre de usuari@" required>
             </div>
     
             <div class="input-group">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="email" name="email" class="inputb" id="email" placeholder="E-mail" required>
             </div>
     
             <div class="input-group">
                 <label class="titulos" for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha" required>
+                <input type="date" name="fecha" class="inputb" id="fecha" required>
             </div>
     
             <div class="input-group">
                 <label for="address"></label>
-                <input type="text" name="address" id="address" placeholder="Domicilio" required>
+                <input type="text" name="address" class="inputb" id="address" placeholder="Domicilio" required>
             </div>
     
             <div class="input-group">
@@ -97,7 +99,7 @@
     
             <div class="input-group">
                 <label for="electro">Electro</label>
-                <input type="checkbox" name="interes" id="electro" value="electro">
+                <input type="checkbox" name="interes"  id="electro" value="electro">
     
                 <label for="moda">Moda</label>
                 <input type="checkbox" name="interes" id="moda" value="moda">
@@ -119,58 +121,67 @@
     
             <div class="input-group">
                 <label for="contraseña"></label>
-                <input type="password" name="contraseña" placeholder="Contraseña" pattern=".{8,}"
+                <input type="password" class="inputb" name="contraseña" placeholder="Contraseña" pattern=".{8,}"
                     title="La contraseña debe tener al menos 8 caractéres" required>
             </div>
     
             <div class="input-group">
                 <label for="confirmarContraseña"></label>
-                <input type="password" name="confirmarContraseña" placeholder="Confirmar Contraseña" pattern=".{8,}"
+                <input type="password" class="inputb" name="confirmarContraseña" placeholder="Confirmar Contraseña" pattern=".{8,}"
                     title="La contraseña debe tener al menos 8 caractéres" required>
             </div>
     
             <div class="input-group">
                 <label></label>
-                <input type="submit" value="Registrarme">
+                <input type="submit" class="inputb bgcolor" value="Registrarme">
                 <input type="reset" value="Borrar Formulario">
             </div>
     
         </form>
+    </main>
 </div>
-    <footer class="container">
-        <section class="footsection">
+    <footer >
+        
+        <section class="container footsection">
             <div class="card card-long">
                 <div class="footer-head">
                     <i class="fa-solid fa-credit-card"></i>
                 </div>
-                <div>
-                    <h2>Pagá con tarjeta o en efectivo</h2>
-                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                    <p class="tam-descf">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                         puntos de pago. ¡Y siempre es seguro!</p>
-                </div>
+                
             </div>
             <div class="card card-long">
                 <div class="footer-head">
                     <i class="fa-solid fa-gift"></i>
                 </div>
-                <h2>Envío gratis desde $ 2.500</h2>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p class="tam-descf">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
             </div>
             <div class="card card-long">
                 <div class="footer-head">
                     <i class="fa-solid fa-user-shield"></i>
                 </div>
-                <h2>Pagá con tarjeta o en efectivo</h2>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p class="tam-descf">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!</p>
             </div>
+            <div>
+                <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+             </div>
+    
         </section>
-        <div>
-            <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
-        </div>
-
+       
     </footer>
+     
 </body>
 
 </html>
+
+    <div class="container">
+        
+</div>
+  

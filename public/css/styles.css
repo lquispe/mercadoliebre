@@ -242,18 +242,10 @@ footer{
 }
 
 
-.input-group input[value="Ingresá"]:hover {
-    background-color: #0022AA;
-    color: white;
-}
 
 
-.input-group input[value="Registrarme"] {
-    background-color: #87CEEB;
-    color: black;
-}
 
-.input-group:hover input[value="Registrarme"]:hover {
+.bgcolor:hover {
     background-color: blue;
     color: white;
 }
