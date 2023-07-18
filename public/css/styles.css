@@ -156,7 +156,6 @@ footer{
 
 .card {
     margin: 16px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     background: #fff;
     box-sizing: border-box;
@@ -290,11 +289,20 @@ footer{
 .tam-descf{
     font-size: 12px;
 }
+.decoration{
+    text-decoration:none;
+    color:black;
+}
+
 
 @media(min-width:361px) {
-    .card-long {
-        flex: 35%;
+
+    .center-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
     }
+    
 
     .verEnl {
         display: inline;
@@ -302,7 +310,11 @@ footer{
 
     .enlaces {
         display: flex;
+        font-size: 0.5rem;
 
+    }
+    .compra-txt{
+        font-size:0.5rem;
     }
 
     .navbar {
@@ -321,6 +333,7 @@ footer{
         align-items: center;
         /**para centrar en el hight*/
         justify-content: space-around;
+        flex: 1 0 50%;
 
 
     }
@@ -366,13 +379,17 @@ footer{
     .card-long {
         flex: 26%;
     }
-
+    .compra-txt {
+        font-size: 12px;
+    }
     .verEnl {
         display: inline;
     }
 
     .enlaces {
+        padding-top:1rem;
         display: flex;
+        font-size:12px;
 
     }
 
@@ -393,6 +410,7 @@ footer{
         align-items: center;
         /**para centrar en el hight*/
         justify-content: space-around;
+        flex: 0 0 40%;
 
 
     }
